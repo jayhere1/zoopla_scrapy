@@ -23,4 +23,4 @@ class ZooplaGlasgowSpider(scrapy.Spider):
             yield scrapy.Request(url=response.urljoin(next_page),
                                  callback=self.parse
                                  )
-# scrapy crawl zoopla_edinburgh -o dataset.json
+# scrapy crawl zoopla_glasgow -o dataset.json
